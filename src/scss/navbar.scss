@@ -1,0 +1,43 @@
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-wrapper .glyphicon {
+  font-size: 10px;
+}
+
+.navbar-transparent a {
+  color: #e4e5e6;
+}
+
+.navbar-transparent li > a {
+  padding: 8px 25px;
+
+  &:hover, &:focus {
+    color: #fff;
+    background-color: transparent !important;
+  }
+}
+
+.navbar-transparent .btn-contact {
+  border: 1px solid #808e96;
+  border-radius: 3px;
+}

@@ -1,0 +1,59 @@
+section.services {
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    color: #000;
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 10px;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .img-circle {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin: auto;
+  }
+
+  .img-circle i {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+  }
+
+  .carousel-indicators li {
+    border-color: #c2ccd2;
+    width: 8px;
+    height: 8px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+
+  .carousel-indicators li.active {
+    background: $pixel-blue;
+    border-color: $pixel-blue-darker;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  // When there are at least 2 services per line
+  section.services {
+    .service-item {
+      min-height: 280px;
+    }
+  }
+}

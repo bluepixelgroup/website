@@ -1,0 +1,120 @@
+{
+	"title": "Blue Pixel | Full Stack. Freelancing. Quality",
+	"menu": [
+		{
+			"name": "Services",
+			"href": "#services"
+		},
+		{
+			"name": "Team",
+			"href": "#team"
+		}
+	],
+	"languages": [
+		{
+			"shortname": "En",
+			"name": "English",
+			"href": "/"
+		}
+	],
+
+	"sections": {
+		"home": {
+			"primary_text": "Bringing quality and creativity to software",
+			"secondary_text": "We are commited to meeting the expectations of our customers. We achieve this by mixing technology and innovation to deliver the best experience.",
+			"action_button": {
+				"text": "Work with us"
+			}
+		},
+		"services": {
+			"primary_text": "Services",
+			"secondary_text": "Work",
+			"list": [
+				{
+					"name": "Web Development",
+					"description": "When doing web development, we think mobile first. Your mobile visitors will have just as good an experience as your desktop users.",
+					"color": "blue",
+					"icon": "fa-mobile"
+				},
+				{
+					"name": "Full Stack",
+					"description": "We wear many hats: from setting up your infrastructure and creating backend services, all the way to rounding the corners of your website's buttons.",
+					"color": "green",
+					"icon": "fa-stack-overflow"
+				},
+				{
+					"name": "Improving performance",
+					"description": "Your website's loading time is affecting your bottom line. We can analyze and improve your website's loading time, or the number of operations per second that your services can handle.",
+					"color": "blue-green",
+					"icon": "fa-line-chart"
+				},
+				{
+					"name": "Quality assurance",
+					"description": "We help you maintain a quality standard for your software over its entire lifetime with performance and automated testing.",
+					"color": "green",
+					"icon": "fa-code"
+				},
+				{
+					"name": "SEO",
+					"description": "SEO is the holy grail of Web traffic acquisition. SEO campaings take longer to become effective, but can bring highly qualified traffic with no recurring cost.",
+					"color": "blue-green",
+					"icon": "fa-search"
+				},
+				{
+					"name": "Support",
+					"description": "You won't have to worry about software created by us breaking down. We're available to provide support after delivery.",
+					"color": "blue-green",
+					"icon": "fa-users"
+				}
+			]
+		},
+		"work": {
+			"enabled": false,
+			"primary_text": "Latest Work",
+			"secondary_text": "Work"
+		},
+		"team": {
+			"secondary_text": "Team",
+			"list": [
+				{
+					"name": "Alexandru Mihai",
+					"description": "Software Engineer by day, Hacker by night. Simple can be harder than complex: the purpose of software engineering is to control complexity, not create it.",
+					"email": "hello@bluepixel.io",
+					"facebook": "",
+					"twitter": "https://twitter.com/92alexm",
+					"linkedin": "https://www.linkedin.com/in/alexm92",
+					"github": "https://github.com/alexm92",
+					"thumbnail": "img/alex.png",
+					"profile_picture": "img/alex.png"
+				},
+				{
+					"name": "Bogdan Mihai",
+					"description": "Worked at @Facebook, @Twitter. Over 4 years of software engineering experience, half of which were spent doing front-end. I believe in doing it right even when nobody's looking.",
+					"email": "hello@bluepixel.io",
+					"facebook": "",
+					"twitter": "https://twitter.com/mihaib",
+					"linkedin": "https://www.linkedin.com/in/bmihai/",
+					"github": "https://github.com/mihaibogdan10",
+					"thumbnail": "img/bogdan.png",
+					"profile_picture": "img/bogdan.png"
+				},
+				{
+					"name": "Vitalie Maldur",
+					"description": "I believe that software will help humanity to make the next step in evolution. Embrace continuous learning to get better. Dream big, start small in software and in life.",
+					"email": "hello@bluepixel.io",
+					"facebook": "",
+					"twitter": "",
+					"linkedin": "https://www.linkedin.com/in/vitaliemaldur",
+					"github": "https://github.com/vitaliemaldur",
+					"thumbnail": "img/vitalie.png",
+					"profile_picture": "img/vitalie.png"
+				}
+
+			]
+		},
+		"footer": {
+			"email": "hello@bluepixel.io",
+			"address": "Bucharest. Romania."
+		}
+	}
+}

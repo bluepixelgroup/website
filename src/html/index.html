@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Blue Pixel">
+    <meta name="description" content="Bringing quality and creativity to software">
+    <meta name="keywords" content="Quality, Software, Creativity, Full Stack, HTML, CSS, JavaScript, Python, Web Development, Consultancy, Performace">
+    <meta property="og:image" content="http://bluepixel.io/img/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="180">
+    <meta property="og:image:height" content="180">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>{{ title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-transparent navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <div class="logo media">
+                  <div class="media-left">
+                    <div class="pixel"></div>
+                  </div>
+                  <div class="media-body">
+                    Blue<br/>Pixel
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                {% for item in menu %}
+                  <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+                {% endfor %}
+
+                <li><a href="#contact" class="btn-contact">Contact</a></li>
+
+                {% if languages|length > 1 %}
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      En <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      {% for item in languages %}
+                        <li><a href="{{ item.href }}">{{ item.name }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Top Section
+    ================================================== -->
+    <section class="home" id="home">
+      <div class="container">
+        <h1>{{ sections.home.primary_text }}</h1>
+        <h4>{{ sections.home.secondary_text }}</h4>
+
+        <p><a href="mailto:{{ sections.footer.email }}?subject=Hello" class="btn btn-primary">{{ sections.home.action_button.text }}</a></p>
+      </div>
+    </section>
+
+
+    <!-- Marketing sections
+    ================================================== -->
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2>{{ sections.services.secondary_text }}</h2>
+        <h1>{{ sections.services.primary_text }}</h1>
+
+        <div class="row">
+          {% for item in sections.services.list %}
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 service-item">
+              <div class="bg-{{ item.color }} img-circle">
+                <i class="fa {{ item.icon }}" aria-hidden="true"></i>
+              </div>
+              <h4>{{ item.name }}</h4>
+              <p>{{ item.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>
+
+    {% if sections.work.enabled %}
+      <section class="latest-work" id="work">
+        <h2>{{ sections.work.second_text }}</h2>
+        <h1>{{ sections.work.primary_text }}</h1>
+
+        <div class="content">
+          <img src="img/latest_work.png" alt="Latest work" />
+        </div>
+      </section>
+    {% endif %}
+
+
+    <section class="team" id="team">
+      <div class="container">
+
+        <div class="tab-content">
+          {% for item in sections.team.list %}
+            <div id="team-member-{{ loop.index }}" role="tabpanel" class="row tab-pane fade {% if loop.first %}in active{% endif %}">
+              <div class="col-sm-7 col-md-7">
+                <h2>{{ sections.team.secondary_text }}</h2>
+                <h1>{{ item.name }}</h1>
+
+                <p class="lead">{{ item.description }}</p>
+
+                <form>
+                  <a href="mailto:{{ item.email }}" class="btn btn-info bg-green" target="_blank">Contact</a>
+                  {% if item.facebook %}
+                    <a href="{{ item.facebook }}" target="_blank" class="btn social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  {% endif %}
+                  {% if item.twitter %}
+                    <a href="{{ item.twitter }}" target="_blank" class="btn social"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                  {% endif %}
+                  {% if item.linkedin %}
+                    <a href="{{ item.linkedin }}" target="_blank" class="btn social"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                  {% endif %}
+                  {% if item.github %}
+                    <a href="{{ item.github }}" target="_blank" class="btn social"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                  {% endif %}
+                </form>
+              </div>
+              <div class="col-sm-5 col-md-5 hidden-xs">
+                <img class="img-responsive" src="{{ item.profile_picture }}" alt="{{ item.name }}" />
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <ul class="nav nav-pills team-members" role="tablist">
+          {% for item in sections.team.list %}
+            <li role="presentation" class="{% if loop.first %}active{% endif %}">
+              <a id="team-member-thumb-{{ loop.index }}" href="#team-member-{{ loop.index }}" aria-controls="team-member-{{ loop.index }}" role="tab" data-toggle="tab" class="img-circle" style="background-image: url('{{ item.thumbnail }}')" title="{{ item.name }}">
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div>
+        <p class="contact-title">Lets get started.</p>
+        <p class="contact-desc">If you're interested and want to know what we do, get in touch.</p>
+        <div>
+          <a href="mailto:{{ sections.footer.email }}?subject=Hello" class="btn btn-primary" target="_blank"> Pop us a message </a>
+        </div>
+        <img src="img/mailbox.png" alt="Mailbox" />
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <div class="logo media">
+              <div class="media-left">
+                <div class="pixel"></div>
+              </div>
+              <div class="media-body">
+                Blue<br/>Pixel
+              </div>
+            </div>
+            <address>
+              {{ sections.footer.phone_number }}<br>
+              <a href="mailto:{{ sections.footer.email }}?subject=Hello" target="_blank">{{ sections.footer.email }}</a><br>
+              {{ sections.footer.address }}
+            </address>
+          </div>
+
+          <div class="col-xs-6 col-xs-offset-0 col-sm-2 col-sm-offset-2 section">
+            <h2><a href="#services">Services</a></h2>
+            <p><a href="#services">Web Development</a></p>
+            <p><a href="#services">Full Stack</a></p>
+            <p><a href="#services">Improving Performance</a></p>
+          </div>
+
+          <div class="col-xs-6 col-sm-2 section">
+            <h2><a href="#">Resources</a></h2>
+            <p><a href="#">Blog</a></p>
+          </div>
+
+          <div class="col-xs-6 col-sm-2 section">
+            <h2><a href="#team">Company</a></h2>
+            <p><a href="#team">About</a></p>
+            <p><a href="#contact">Contact Us</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="pull-right">
+              <a href="https://medium.com/bluepixelio" class="btn social" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/bluepixelio" class="btn social" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              <a href="https://facebook.com/bluepixelio" class="btn social" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            </p>
+            <p class="pull-left">&copy; 2017 Blue Pixel. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+      // select team member @refresh
+      var randomId = Math.floor(Math.random() * {{ sections.team.list|length }}) + 1;
+      $('#team-member-thumb-' + randomId).tab('show');
+
+      // increased cycling for carousel
+      $('.carousel').carousel({
+        interval: 8000,
+      });
+    </script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-60048784-3', 'auto');
+      ga('send', 'pageview', {
+        'page': location.pathname + location.search  + location.hash,
+      });
+    </script>
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:538409,hjsv:5};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  </body>
+</html>

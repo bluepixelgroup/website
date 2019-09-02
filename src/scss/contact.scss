@@ -1,0 +1,26 @@
+.contact {
+  position: relative;
+  /* background-color: #E4E4E4; */
+  padding-bottom: 180px;
+
+  .contact-desc {
+    font-size: 20px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    height: 150px;
+  }
+}

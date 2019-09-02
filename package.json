@@ -1,0 +1,29 @@
+{
+  "name": "bluepixel.io",
+  "version": "1.0.0",
+  "description": "Bringing quality and creativity to software",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluepixelio/bluepixel.io.git"
+  },
+  "author": "Blue Pixel",
+  "license": "ISC",
+  "homepage": "http://bluepixel.io",
+  "scripts": {
+    "build": "grunt build",
+    "serve": "grunt serve"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-injector": "^1.1.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-shell": "^2.1.0",
+    "jit-grunt": "^0.10.0",
+    "time-grunt": "^1.4.0"
+  }
+}

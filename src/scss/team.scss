@@ -1,0 +1,72 @@
+section.team {
+  text-align: left;
+  padding-bottom: 0;
+}
+
+section.team h2 {
+  margin: 0;
+}
+
+section.team h1 {
+  letter-spacing: 1px;
+}
+
+section.team .img-responsive {
+  height: 500px;
+}
+
+section.team .lead {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+section.team .team-members {
+  position: absolute;
+  margin-top: -200px;
+}
+
+section.team .nav-pills li > a {
+  opacity: .5;
+  background: none;
+  color: #666;
+  margin: 10px;
+}
+
+section.team .nav-pills li.active > a {
+  opacity: 1;
+
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+}
+
+section.team .nav-pills .img-circle {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 75px;
+  padding: 1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  border-radius: 50%;
+}
+
+section.team .btn-info {
+  text-transform: uppercase;
+  padding: 10px 50px;
+  margin-right: 50px;
+  font-weight: 300;
+  font-size: 12px;
+  border: 0;
+
+  &:hover {
+    background: darken($olive-green, 3%) !important;
+  }
+}
+
+section.team .btn.social {
+  font-size: 24px;
+  color: #333;
+}
