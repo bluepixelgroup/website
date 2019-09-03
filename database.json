@@ -79,7 +79,7 @@
 				{
 					"name": "Alexandru Mihai",
 					"description": "Software Engineer by day, Hacker by night. Simple can be harder than complex: the purpose of software engineering is to control complexity, not create it.",
-					"email": "hello@bluepixel.io",
+					"email": "hello@bluepixelgroup.com",
 					"facebook": "",
 					"twitter": "https://twitter.com/92alexm",
 					"linkedin": "https://www.linkedin.com/in/alexm92",
@@ -90,7 +90,7 @@
 				{
 					"name": "Bogdan Mihai",
 					"description": "Worked at @Facebook, @Twitter. Over 4 years of software engineering experience, half of which were spent doing front-end. I believe in doing it right even when nobody's looking.",
-					"email": "hello@bluepixel.io",
+					"email": "hello@bluepixelgroup.com",
 					"facebook": "",
 					"twitter": "https://twitter.com/mihaib",
 					"linkedin": "https://www.linkedin.com/in/bmihai/",
@@ -101,7 +101,7 @@
 				{
 					"name": "Vitalie Maldur",
 					"description": "I believe that software will help humanity to make the next step in evolution. Embrace continuous learning to get better. Dream big, start small in software and in life.",
-					"email": "hello@bluepixel.io",
+					"email": "hello@bluepixelgroup.com",
 					"facebook": "",
 					"twitter": "",
 					"linkedin": "https://www.linkedin.com/in/vitaliemaldur",
@@ -113,7 +113,7 @@
 			]
 		},
 		"footer": {
-			"email": "hello@bluepixel.io",
+			"email": "hello@bluepixelgroup.com",
 			"address": "Bucharest. Romania."
 		}
 	}

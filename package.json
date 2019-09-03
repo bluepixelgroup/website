@@ -1,14 +1,10 @@
 {
-  "name": "bluepixel.io",
+  "name": "bluepixelgroup.com",
   "version": "1.0.0",
   "description": "Bringing quality and creativity to software",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bluepixelio/bluepixel.io.git"
-  },
   "author": "Blue Pixel",
   "license": "ISC",
-  "homepage": "http://bluepixel.io",
+  "homepage": "https://bluepixelgroup.com",
   "scripts": {
     "build": "grunt build",
     "serve": "grunt serve"
