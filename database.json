@@ -77,26 +77,26 @@
 			"secondary_text": "Team",
 			"list": [
 				{
-					"name": "Alexandru Mihai",
+					"name": "Alex Mihai",
 					"description": "Software Engineer by day, Hacker by night. Simple can be harder than complex: the purpose of software engineering is to control complexity, not create it.",
 					"email": "hello@bluepixelgroup.com",
 					"facebook": "",
 					"twitter": "https://twitter.com/92alexm",
 					"linkedin": "https://www.linkedin.com/in/alexm92",
 					"github": "https://github.com/alexm92",
-					"thumbnail": "img/alex.png",
-					"profile_picture": "img/alex.png"
+					"thumbnail": "img/alexm.png",
+					"profile_picture": "img/alexm.png"
 				},
 				{
-					"name": "Bogdan Mihai",
-					"description": "Worked at @Facebook, @Twitter. Over 4 years of software engineering experience, half of which were spent doing front-end. I believe in doing it right even when nobody's looking.",
+					"name": "Alexandru Daicu",
+					"description": "I like thinking outside the box. Not everything is meant to be improved &quot;Telephone did not come into existence from the persistent improvement of the postcard.&quot;",
 					"email": "hello@bluepixelgroup.com",
 					"facebook": "",
-					"twitter": "https://twitter.com/mihaib",
-					"linkedin": "https://www.linkedin.com/in/bmihai/",
-					"github": "https://github.com/mihaibogdan10",
-					"thumbnail": "img/bogdan.png",
-					"profile_picture": "img/bogdan.png"
+					"twitter": "",
+					"linkedin": "https://www.linkedin.com/in/alexdaicu/",
+					"github": "https://github.com/alexdaicu",
+					"thumbnail": "img/alexd.png",
+					"profile_picture": "img/alexd.png"
 				},
 				{
 					"name": "Vitalie Maldur",
