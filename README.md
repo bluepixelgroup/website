@@ -1,7 +1,14 @@
 # Blue Pixel
 
 
-## Deployment
+## Develop
 ```bash
-python build.py > build.html
+nvm use
+yarn serve
+```
+
+## Deploy
+```bash
+yarn serve
+yarn build
 ```

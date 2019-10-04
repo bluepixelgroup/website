@@ -22,12 +22,12 @@ body {
 }
 
 .logo.media {
-  max-width: 110px;
+  max-width: 130px;
 }
 
 .logo.media .media-left {
   background: $pixel-blue-darker;
-  padding: 10px;
+  padding: 0;
 }
 
 .logo.media .media-left .pixel {
@@ -38,10 +38,11 @@ body {
 
 .logo.media .media-body {
   color: rgb(153, 187, 208);
-  font-weight: 100;
+  font-weight: 300;
   padding-left: 10px;
   vertical-align: middle;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 
