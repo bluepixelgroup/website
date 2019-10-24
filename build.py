@@ -16,7 +16,7 @@ def main():
 
     context['current_year'] = datetime.now().year
     template = render('src/html/index.html', context)
-    print template
+    print (template)
 
 
 if __name__ == '__main__':
